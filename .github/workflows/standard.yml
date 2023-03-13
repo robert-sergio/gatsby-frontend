@@ -31,8 +31,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: {{ env.aws_role }} # arn:aws:iam::123456789100:role/my-github-actions-role
-          aws-region: {{ env.aws_region }}
+          role-to-assume: ${{ env.aws_role }} # arn:aws:iam::123456789100:role/my-github-actions-role
+          aws-region: ${{ env.aws_region }}
 
       # # Runs a single command using the runners shell
       # - name: Run a one-line script
