@@ -18,7 +18,8 @@ permissions:
   contents: read  # This is required for actions/checkout
 
 env:
-  aws_role: arn:aws:iam::741143563944:user/robert
+  aws_role: arn:aws:iam::741143563944:role/gh-actions-role
+  aws_role_name: gh-actions-role
   aws_region: us-east-1
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -37,7 +38,7 @@ jobs:
         with:
           role-to-assume: ${{ env.aws_role }}
           aws-region: ${{ env.aws_region }}
-          role-session-name: robert
+          role-session-name: ${{ env.aws_role_name }}
 
       # # Runs a single command using the runners shell
       # - name: Run a one-line script
