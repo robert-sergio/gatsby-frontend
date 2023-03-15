@@ -18,7 +18,7 @@ permissions:
   contents: read  # This is required for actions/checkout
 
 env:
-  aws_role: arn:aws:iam::741143563944:role/gh-actions-role
+  aws_role: arn:aws:iam::741143563944:role/gh-actions-role-2
   aws_role_name: gh-actions-role
   aws_region: us-east-1
 
