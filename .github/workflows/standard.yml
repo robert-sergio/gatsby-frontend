@@ -21,6 +21,7 @@ env:
   aws_role: arn:aws:iam::741143563944:role/gh-actions-role-2
   aws_role_name: gh-actions-role
   aws_region: us-east-1
+  aws_bucket_name: gatsbystatic
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
