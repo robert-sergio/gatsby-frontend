@@ -46,6 +46,8 @@ jobs:
           node-version: 18
       - name: Build
         run: |
+          npm install
+          npm ci
           npm run build
 
       # # Runs a single command using the runners shell
