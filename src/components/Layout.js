@@ -1,7 +1,7 @@
 import React from 'react'
-import Footer from './footer'
-import Navbar from './navbar'
-import Sidebar from './sidebar'
+import Footer from './Footer'
+import Navbar from './Navbar'
+import Sidebar from './Sidebar'
 
 export default function layout() {
   return (

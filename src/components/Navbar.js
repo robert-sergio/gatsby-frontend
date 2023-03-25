@@ -2,31 +2,60 @@ import React from 'react'
 
 export default function navbar() {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+    <nav className="navbar navbar-expand-sm bg-secondary px-5">
+        <div className="container-fluid  mt-2 mb-2">
+
+            <a class="navbar-brand myfont text-light fs-2" href="#">Robert Sergio</a>
+
+            <ul className="navbar-nav">
+                <li className="nav-item">
+                <a className="nav-link text-light" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Aulas
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="#">Python</a></li>
+                        <li><a className="dropdown-item" href="#">Github actions</a></li>
+                        <li><a className="dropdown-item" href="#">VBA</a></li>
                     </ul>
-                    </li>
-                </ul>
-            </div>
+                </li>
+
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projetos
+                    </a>
+                    <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="#">Arduino</a></li>
+                        <li><a className="dropdown-item" href="#">Aplicativos</a></li>
+                        <li><a className="dropdown-item" href="#">Sites</a></li>
+                    </ul>
+                </li>
+
+                <li className="nav-item">
+                <a className="nav-link  text-light">Projetos Sociais</a>
+                </li>
+
+                <li className="nav-item">
+                <a className="nav-link  text-light">Contato</a>
+                </li>
+
+            </ul>
+
+            <ul className="navbar-nav px-5">
+                <li className='btn btn-sm btn-danger'>
+                    <i className="bi bi-youtube"></i>
+                </li>
+                <li className='btn btn-sm btn-secondary'>
+                    <i class="bi bi-github"></i>
+                </li>
+                <li className='btn btn-sm btn-primary'>
+                    <i class="bi bi-linkedin"></i>
+                </li>
+            </ul>   
         </div>
-    </nav> 
+    </nav>
   )
 }
