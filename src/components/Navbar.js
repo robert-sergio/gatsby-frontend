@@ -5,7 +5,7 @@ export default function navbar() {
     <nav className="navbar navbar-expand-sm bg-secondary px-5">
         <div className="container-fluid  mt-2 mb-2">
 
-            <a class="navbar-brand myfont text-light fs-2" href="#">Robert Sergio</a>
+            <a className="navbar-brand myfont text-light fs-2" href="#">Robert Sergio</a>
 
             <ul className="navbar-nav">
                 <li className="nav-item">
@@ -49,10 +49,10 @@ export default function navbar() {
                     <i className="bi bi-youtube"></i>
                 </li>
                 <li className='btn btn-sm btn-secondary'>
-                    <i class="bi bi-github"></i>
+                    <i className="bi bi-github"></i>
                 </li>
                 <li className='btn btn-sm btn-primary'>
-                    <i class="bi bi-linkedin"></i>
+                    <i className="bi bi-linkedin"></i>
                 </li>
             </ul>   
         </div>
