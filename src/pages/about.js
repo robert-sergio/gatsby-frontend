@@ -1,7 +1,16 @@
-import React from 'react'
+import * as React from "react"
+import Layout from "../components/Layout"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
-export default function about() {
+const AboutPage = () => {
   return (
-    <div>About Robertnik!</div>
+    <section>
+      <Layout />
+    </section>
   )
 }
+
+export default AboutPage
+
+export const Head = () => <title>Home Page</title>
