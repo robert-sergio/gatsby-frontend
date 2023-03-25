@@ -1,14 +1,11 @@
 import * as React from "react"
-import About from "./about"
-import Python from "./projects/python"
-import Iot from "./projects/iot"
+import Layout from "../components/layout"
+import "../styles/styles.css"
 
 const IndexPage = () => {
   return (
     <section>
-      <About />
-      <Python />
-      <Iot />
+      <Layout />
     </section>
   )
 }

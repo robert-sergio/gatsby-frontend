@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "gatsby_template",
-  "author": "Robert",
+  "author": "Robert Sergio",
   "keywords": [
     "gatsby"
   ],
@@ -17,8 +17,6 @@
   "dependencies": {
     "gatsby": "^5.7.0",
     "gatsby-plugin-sitemap": "^6.7.0",
-    "primeicons": "^6.0.1",
-    "primereact": "^9.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
