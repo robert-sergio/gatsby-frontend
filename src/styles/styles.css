@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'MyWebFont';
-    src: url('/styles/Circuitboard.woff') format('woff'),  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-         url('/styles/Circuitboard.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    src: url('Circuitboard.woff') format('woff'),  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('Circuitboard.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 .myfont {

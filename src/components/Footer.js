@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-export default function footer() {
+export default function MeuFooter() {
   return (
-    <div className="footer">
-      <p className="test">footer</p>
+    <div className='fixed-bottom bg-secondary'>
+      <div>
+        <p>Contato</p>
+        <p>Assine a Newsletter</p>
+      </div>
     </div>
   )
 }

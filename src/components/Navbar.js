@@ -12,6 +12,8 @@ import {
   DropdownMenu,
   DropdownItem,
 } from 'reactstrap';
+import '../styles/styles.css'
+
 
 export default function MeuNavbar({ direction, ...args }) {
   const [collapsed, setCollapsed] = useState(true);
@@ -55,14 +57,14 @@ export default function MeuNavbar({ direction, ...args }) {
                 <NavItem>
                     <NavLink className='text-light' href="/components/">Contatos</NavLink>
                 </NavItem>
-                <NavItem>
+                <NavItem className='btn btn-light mx-1'>
                     <i class="bi bi-github"></i>
                 </NavItem>
-                <NavItem>
-                    <i class="bi bi-github"></i>
+                <NavItem className='btn btn-primary mx-1'>
+                    <i class="bi bi-linkedin"></i>
                 </NavItem>
-                <NavItem>
-                    <i class="bi bi-github"></i>
+                <NavItem className='btn btn-danger  mx-1'>
+                    <i class="bi bi-youtube"></i>
                 </NavItem>
             </Nav>
         </Navbar>
