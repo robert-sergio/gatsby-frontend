@@ -1,5 +1,3 @@
-import $ from 'jquery';
-import Popper from 'popper.js';
 import * as React from "react"
 import Layout from "../components/Layout"
 import '../styles/styles.css'
