@@ -12,16 +12,22 @@ import '../styles/styles.css'
 export default function MeuNavbar({ direction, ...args }) {
   return (
     <div>
-        <Navbar color="faded" light className=' bg-secondary px-5'>
+        <Navbar color="faded" light className='bg-secondary px-5'>
             <NavbarBrand href="/" className="text-light fs-4 myfont">
                 Robert Sergio
             </NavbarBrand>
             <Nav navbar-expand className='position-relative'>
                 <NavItem>
-                    <NavLink className='text-light' href="/aulas/">Aulas</NavLink>
+                    <NavLink className='text-light' href="/">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink className='text-light' href="/projetos/">Projetos</NavLink>
+                    <NavLink className='text-light' href="/aulas/">Aprenda</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink className='text-light' href="/projetos/">Meus projetos</NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink className='text-light' href="/nerd/">Mundo Nerd</NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink className='text-light' href="/about/">Sobre</NavLink>

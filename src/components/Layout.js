@@ -1,13 +1,21 @@
 import React from 'react'
 import MeuNavbar from './Navbar'
-import MeuFooter from './Footer'
 import '../styles/styles.css'
+import {
+  Container,
+  CardGroup,
+} from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
-export default function layout() {
+export default function layout({ children, props }) {
   return (
     <section>
         <MeuNavbar />
-        <MeuFooter />
+          <Container className='mt-2'>
+          <h2 className='mx-2'>{props.pagetitle}</h2>
+            { children }
+          </Container>
     </section>
   )
 }
