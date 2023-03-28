@@ -8,13 +8,15 @@ import {
   Col
 } from 'reactstrap';
 import MeuCard from "../../components/Card"
+import Developing from "../../components/Developing";
 
 const ProjectPage = () => {
   return (
     <section>
       <Layout props = {{'pagetitle':'Projetos'}}>
+        <Developing />
 
-        <Card className="mt-2 mb-2">
+        {/* <Card className="mt-2 mb-2">
           <CardHeader>
             Internet das Coisas
           </CardHeader>
@@ -56,7 +58,7 @@ const ProjectPage = () => {
               </Col>
             </Row>
           </CardBody>
-        </Card>
+        </Card> */}
 
       </Layout>
     </section>

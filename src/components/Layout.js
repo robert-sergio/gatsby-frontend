@@ -1,21 +1,30 @@
 import React from 'react'
 import MeuNavbar from './Navbar'
-import '../styles/styles.css'
 import {
   Container,
-  CardGroup,
+  
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import '../styles/styles.css'
+import Body from './Body';
+import MeuFooter from './Footer';
 
 export default function layout({ children, props }) {
   return (
-    <section>
+    <section className='mb-5'>
         <MeuNavbar />
-          <Container className='mt-2'>
-          <h2 className='mx-2'>{props.pagetitle}</h2>
-            { children }
+          <Container>
+            <h1>
+              { props.pagetitle }
+            </h1>
+          <Container className='mt-2 border rounded border-warning '>
+            <Body >
+              { children }
+            </Body>
           </Container>
+        </Container>
+        <MeuFooter />
     </section>
   )
 }

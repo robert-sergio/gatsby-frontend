@@ -1,18 +1,13 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import MeuCarrossel from "../components/Carrosel"
+import '../styles/styles.css'
+import Developing from "../components/Developing"
 
 const IndexPage = () => {
   return (
-    <section>
-      <Layout  props = {{'pagetitle':'Portal Robertnick'}}>
-        <p>Meu portal de Tecnologia, Programação e mundo Nerd!</p>
-        <p>Projetos Sociais mais recentes</p>
-        <p>Video do Youtube Mais recente</p>
-        <p>Novos Posts aparecerão aqui</p>
-        <p>Opiniões</p>
-      </Layout>
-    </section>
+    <Layout props = {{'pagetitle':'Portal Robertnik'}}>
+      <Developing />
+    </Layout>
   )
 }
 

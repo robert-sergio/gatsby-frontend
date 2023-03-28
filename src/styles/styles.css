@@ -5,5 +5,33 @@
 }
 
 .myfont {
-    font-family: 'MyWebFont', Fallback, sans-serif;
+    font-family: 'MyWebFont', Fallback, sans-serif, bold;
+}
+
+body {
+    background-color: #fbbd0d;
+}
+
+.bg-black {
+    background-color: #2d2c2e;
+}
+
+.bg-yellow {
+    background-color: #fbbd0d;
+}
+
+.bg-red {
+    background-color: #fd1f4a;
+}
+
+.text-black {
+    color: #2d2c2e;
+}
+
+.text-yellow {
+    color: #fbbd0d;
+}
+
+.text-red {
+    color: #fd1f4a;
 }

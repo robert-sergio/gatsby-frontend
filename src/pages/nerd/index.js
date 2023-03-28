@@ -8,13 +8,15 @@ import {
   Col
 } from 'reactstrap';
 import MeuCard from "../../components/Card"
+import Developing from "../../components/Developing";
 
 const NerdPage = () => {
   return (
     <section>
       <Layout props = {{'pagetitle':'Mundo Nerd!'}}>
+        <Developing />
 
-        <Card className="mt-2 mb-2">
+        {/* <Card className="mt-2 mb-2">
           <CardHeader>
             Séries e animes
           </CardHeader>
@@ -56,7 +58,7 @@ const NerdPage = () => {
               </Col>
             </Row>
           </CardBody>
-        </Card>
+        </Card> */}
 
       </Layout>
     </section>
