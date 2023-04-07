@@ -22,13 +22,13 @@ export default function MeuNavbar({ direction, ...args }) {
                 </NavbarBrand>
                 <Nav className=''>
                     <NavItem className='btn btn-light mx-1'>
-                        <a href='https://github.com/robert-sergio' class="bi bi-github"></a>
+                        <a href='https://github.com/robert-sergio' class="bi nav-btn bi-github"></a>
                     </NavItem>
                     <NavItem className='btn btn-primary mx-1'>
-                        <a href='https://www.linkedin.com/in/robert-sergio/' class="bi bi-linkedin"></a>
+                        <a href='https://www.linkedin.com/in/robert-sergio/' class="bi nav-btn bi-linkedin"></a>
                     </NavItem>
                     <NavItem className='btn btn-danger  mx-1'>
-                        <a href='https://www.youtube.com/channel/UCtyEBMIbJheltY10Qyqf4DQ' class="bi bi-youtube"></a>
+                        <a href='https://www.youtube.com/channel/UCtyEBMIbJheltY10Qyqf4DQ' class="bi nav-btn bi-youtube"></a>
                     </NavItem>
                 </Nav>
             </Navbar>

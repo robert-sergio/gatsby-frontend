@@ -15,9 +15,6 @@ export default function layout({ children, props }) {
     <section className='mb-5'>
         <MeuNavbar />
           <Container>
-            <h1>
-              { props.pagetitle }
-            </h1>
           <Container className='mt-2 border rounded border-warning '>
             <Body >
               { children }
