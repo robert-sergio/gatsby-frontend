@@ -1,16 +1,33 @@
-import * as React from "react"
-import Layout from "../components/Layout"
-import '../styles/styles.css'
-import Developing from "../components/Developing"
+import * as React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
+import { Card } from 'reactstrap'
 
-const IndexPage = () => {
+const HomePage = ({data}) => {
   return (
-    <Layout props = {{'pagetitle':'Portal Robertnik'}}>
-      
+    <Layout >
+      <h4>Algum conteudo</h4>
+
+     {data.allMarkdownRemark.nodes.map (({ frontmatter }) => (
+      <Card>
+        <p>{frontmatter.slug}</p>
+      </Card>
+     ))}
+
     </Layout>
   )
 }
 
-export default IndexPage
+export const query = graphql`
+  query HomePageQuery {
+    allMarkdownRemark{
+      nodes{
+        frontmatter{
+          slug
+        }
+      }
+    }
+  }
+`
 
-export const Head = () => <title>Home Page</title>
+export default HomePage
