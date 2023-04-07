@@ -19,8 +19,10 @@
     "bootstrap-icons": "^1.10.3",
     "gatsby": "^5.7.0",
     "gatsby-plugin-sitemap": "^6.7.0",
+    "gatsby-transformer-remark": "^6.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "reactstrap": "^9.1.6"
+    "reactstrap": "^9.1.6",
+    "rehype-react": "^7.1.2"
   }
 }
