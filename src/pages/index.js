@@ -6,7 +6,7 @@ import Developing from "../components/Developing"
 const IndexPage = () => {
   return (
     <Layout props = {{'pagetitle':'Portal Robertnik'}}>
-      <Developing />
+      
     </Layout>
   )
 }
