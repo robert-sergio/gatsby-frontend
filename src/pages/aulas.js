@@ -1,12 +1,12 @@
 import * as React from "react"
-import Layout from "../../components/Layout"
+import Layout from "../components/Layout"
 import {
   Card,
   CardBody,
   CardHeader,
   NavLink,
 } from 'reactstrap';
-import Developing from "../../components/Developing";
+import Developing from "../components/Developing";
 
 const LessonsPage = () => {
   return (

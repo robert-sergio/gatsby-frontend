@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from "../../components/Layout"
+import Layout from "../components/Layout"
 import {
   Card,
   CardHeader,
@@ -7,8 +7,8 @@ import {
   Row,
   Col
 } from 'reactstrap';
-import MeuCard from "../../components/Card"
-import Developing from "../../components/Developing";
+import MeuCard from "../components/Card"
+import Developing from "../components/Developing";
 
 const ProjectPage = () => {
   return (

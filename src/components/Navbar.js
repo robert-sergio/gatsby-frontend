@@ -36,18 +36,19 @@ export default function MeuNavbar({ direction, ...args }) {
         <div className='bg-secondary'>
             <Navbar>
                 <Nav className='justify-content-center' style={{ flex: 1}}>
+                    {/* Tocar por GraphQL */}
                     <NavItem>
                         <NavLink className='text-warning' href="/">Home</NavLink>
                     </NavItem>
-                    <NavItem>
+                    {/* <NavItem>
                         <NavLink className='text-warning' href="/aulas/">Aprenda</NavLink>
-                    </NavItem>
+                    </NavItem> */}
                     <NavItem>
                         <NavLink className='text-warning' href="/projetos/">Meus projetos</NavLink>
                     </NavItem>
-                    <NavItem>
+                    {/* <NavItem>
                         <NavLink className='text-warning' href="/nerd/">Mundo Nerd</NavLink>
-                    </NavItem>
+                    </NavItem> */}
                     <NavItem>
                         <NavLink className='text-warning' href="/about/">Sobre</NavLink>
                     </NavItem>
