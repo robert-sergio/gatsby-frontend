@@ -10,7 +10,7 @@ import {
 import MeuCard from "../components/Card"
 import Developing from "../components/Developing";
 
-const NerdPage = () => {
+const ContatoPage = () => {
   return (
     <section>
       <Layout props = {{'pagetitle':'Mundo Nerd!'}}>
@@ -65,6 +65,6 @@ const NerdPage = () => {
   )
 }
 
-export default NerdPage
+export default ContatoPage
 
 export const Head = () => <title>Home Page</title>

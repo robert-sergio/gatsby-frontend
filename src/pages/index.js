@@ -1,36 +1,42 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { Card, CardBody, CardHeader, CardSubtitle, CardText, CardTitle, CardImg } from 'reactstrap'
+import { Card, CardBody, CardHeader, CardText, CardTitle, CardImg, Row} from 'reactstrap'
+import Carrossel from '../components/Carrosel'
+import Destaque from '../components/destaques'
 
 const HomePage = ({data}) => {
   return (
     <Layout >
-      <p> Adicionar um Carrossel aqui</p>
-      <p>Eletronica, Robotica, Musicas, Impressao 3D, Automações, Consertos e Reparos, Ideias, e muito mais.</p>
+      <Row style={{marginTop:"1rem", width: "100%", overflow: "hidden"}}>
+        <div style={{width: "50%"}}>
+          <Carrossel />
+        </div>
+        <div style={{width: "50%"}}>
+          <Destaque />
+        </div>
+      </Row>
+
       <hr></hr>
-
-      <p>Ultimas Postagens!</p>
-
       <div style={{width: "100%", overflow: "hidden"}}>
         { data.allMarkdownRemark.nodes.map (({ frontmatter }) => (
           frontmatter.branch==='sobre'
           ? <p></p>
           : (
-            <Card className='mx-1 mt-2 mb-2' style={{width:'15rem', height:'30rem', float: "left"}}>
-              <CardHeader >
+            <Card className='mx-1 mb-2' style={{width:'15rem', height:'30rem', float: "left"}}>
+              <CardHeader className='fw-bold'>
                 {frontmatter.header}
               </CardHeader>
               <CardBody >
-                <CardTitle >
+                <a href={frontmatter.slug}>
+                  <CardImg src={frontmatter.url} style={{height:'10rem'}}/>
+                </a>
+                <CardTitle className='fw-bold mb-2'>
                   {frontmatter.title}
                 </CardTitle >
-                <a href={frontmatter.slug}>
-                  <CardImg src={frontmatter.url}/>
-                </a>
-                <CardSubtitle>
+                {/* <CardSubtitle className='fw-bold'>
                   {frontmatter.subtitle}
-                </CardSubtitle>
+                </CardSubtitle> */}
                 <CardText>
                   {frontmatter.text}
                 </CardText>
@@ -52,7 +58,6 @@ export const query = graphql`
           sub_branch,
           date,
           title,
-          subtitle,
           header,
           text,
           url

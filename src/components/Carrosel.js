@@ -28,7 +28,7 @@ const items = [
   },
 ];
 
-function MeuCarrossel(args) {
+function Example(args) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -56,7 +56,7 @@ function MeuCarrossel(args) {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
+        <img src={item.src} alt={item.altText} style={{height:"15rem"}} />
         <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}
@@ -92,4 +92,4 @@ function MeuCarrossel(args) {
   );
 }
 
-export default MeuCarrossel;
+export default Example;

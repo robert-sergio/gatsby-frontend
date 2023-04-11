@@ -52,6 +52,9 @@ export default function MeuNavbar({ direction, ...args }) {
                     <NavItem>
                         <NavLink className='text-warning' href="/about/">Sobre</NavLink>
                     </NavItem>
+                    {/* <NavItem>
+                        <NavLink className='text-warning' href="/contato/">Contato</NavLink>
+                    </NavItem> */}
                 </Nav>
             </Navbar>
         </div>
