@@ -2,13 +2,10 @@ import React from 'react'
 import MeuNavbar from './Navbar'
 import {
   Container,
-  Row,
-  Col
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles/styles.css'
-import Body from './Body';
 import MeuFooter from './Footer';
 
 export default function layout({ children, props }) {
@@ -17,9 +14,7 @@ export default function layout({ children, props }) {
         <MeuNavbar />
           <Container>
           <Container className='mt-2 border rounded border-warning '>
-            <Body >
               { children }
-            </Body>
           </Container>
         </Container>
         <MeuFooter />

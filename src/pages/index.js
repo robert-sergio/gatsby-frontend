@@ -17,7 +17,7 @@ const HomePage = ({data}) => {
           frontmatter.branch==='sobre'
           ? <p></p>
           : (
-            <Card className='mx-1 mt-2 mb-2' style={{width:'18rem', height:'30rem', float: "left"}}>
+            <Card className='mx-1 mt-2 mb-2' style={{width:'15rem', height:'30rem', float: "left"}}>
               <CardHeader >
                 {frontmatter.header}
               </CardHeader>
