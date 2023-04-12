@@ -20,7 +20,6 @@ const HomePage = ({data}) => {
       
       <div style={{width: "100%", margin:'auto', textAlign:'center'}}>
         <h2>Projetos</h2>
-        <h6>Adicionar um filtro aqui.</h6>
 
         <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
           <div style={{}}>
@@ -28,25 +27,26 @@ const HomePage = ({data}) => {
               frontmatter.branch==='sobre'
               ? <p></p>
               : (
-                <Card className='mx-2' style={{ width:'100%'}}>
+                <Card className='mb-4' style={{ width:'100%'}}>
                   <a href={frontmatter.slug} style={{textDecoration:'None', color:'black'}}>
                   <CardHeader className='fw-bold'>
                     {frontmatter.header}
                   </CardHeader>
                   <CardBody >
-                    <Row>
-                      <Col>
+                    <div style={{margin:'auto', display:'flex', flexWrap:'wrap', alignItems:'center', justifyContent:'center'}}>
+                      <div style={{flex:'1', minWidth:'16rem', maxWidth:'30%'}}>
                         <img src={frontmatter.url} style={{width:'100%'}}/>
-                      </Col>
-                      <Col>
-                        <CardTitle className='fw-bold mb-2'>
+                      </div>
+
+                      <div style={{flex:'1', minWidth:'16rem', maxWidth:'40%'}}>
+                        <h4 className='fw-bold mb-2'>
                           {frontmatter.title}
-                        </CardTitle >
-                        <CardText>
+                        </h4 >
+                        <p>
                           {frontmatter.text}
-                        </CardText>
-                      </Col>
-                    </Row>
+                        </p>
+                      </div>
+                    </div>
                   </CardBody>
                     </a>
                 </Card>
