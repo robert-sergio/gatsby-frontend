@@ -7,7 +7,6 @@ import {
   Row,
   Col
 } from 'reactstrap';
-import MeuCard from "../components/Card"
 import Developing from "../components/Developing";
 
 const ContatoPage = () => {
