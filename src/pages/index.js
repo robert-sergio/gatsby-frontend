@@ -8,41 +8,47 @@ import Destaque from '../components/destaques'
 const HomePage = ({data}) => {
   return (
     <Layout >
-      <Row style={{marginTop:"1rem", width: "100%", overflow: "hidden"}}>
-        <div style={{width: "50%"}}>
+      <div style={{width: "100%", overflow: "hidden", margin:'auto', border:'3px solid green', textAlign:'center'}}>
           <Carrossel />
-        </div>
-        <div style={{width: "50%"}}>
+      </div>
+      <hr></hr>
+      <div style={{width: "100%", overflow: "hidden", margin:'auto', border:'3px solid green', textAlign:'center'}}>
           <Destaque />
-        </div>
-      </Row>
+      </div>
 
       <hr></hr>
-      <div style={{width: "100%", overflow: "hidden"}}>
-        { data.allMarkdownRemark.nodes.map (({ frontmatter }) => (
-          frontmatter.branch==='sobre'
-          ? <p></p>
-          : (
-            <Card className='mx-1 mb-2' style={{width:'15rem', height:'30rem', float: "left"}}>
-              <CardHeader className='fw-bold'>
-                {frontmatter.header}
-              </CardHeader>
-              <CardBody >
-                <a href={frontmatter.slug}>
-                  <CardImg src={frontmatter.url} style={{height:'10rem'}}/>
-                </a>
-                <CardTitle className='fw-bold mb-2'>
-                  {frontmatter.title}
-                </CardTitle >
-                {/* <CardSubtitle className='fw-bold'>
-                  {frontmatter.subtitle}
-                </CardSubtitle> */}
-                <CardText>
-                  {frontmatter.text}
-                </CardText>
-              </CardBody>
-            </Card>)
-        ))}
+      
+      <div style={{width: "100%", margin:'auto', border:'3px solid green', textAlign:'center'}}>
+        <h2>Projetos</h2>
+
+        <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+          <div style={{overflow: "hidden",}}>
+            { data.allMarkdownRemark.nodes.map (({ frontmatter }) => (
+              frontmatter.branch==='sobre'
+              ? <p></p>
+              : (
+                <Card className='mx-2' style={{width:'16rem', minWidth:'16rem', minHeight:'25rem', float: "center"}}>
+                  <a href={frontmatter.slug} style={{textDecoration:'None', color:'black'}}>
+                  <CardHeader className='fw-bold'>
+                    {frontmatter.header}
+                  </CardHeader>
+                  <CardBody >
+                      <CardImg src={frontmatter.url} style={{height:'10rem'}}/>
+                    <CardTitle className='fw-bold mb-2'>
+                      {frontmatter.title}
+                    </CardTitle >
+                    {/* <CardSubtitle className='fw-bold'>
+                      {frontmatter.subtitle}
+                    </CardSubtitle> */}
+                    <CardText>
+                      {frontmatter.text}
+                    </CardText>
+                  </CardBody>
+                    </a>
+                </Card>
+                )))}
+          </div>
+        </div>
       </div>
     </Layout>
   )
