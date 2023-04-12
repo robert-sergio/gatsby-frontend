@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { Card, CardBody, CardHeader, CardText, CardTitle, Row, Col} from 'reactstrap'
+import { Card, CardBody, CardHeader } from 'reactstrap'
 import Carrossel from '../components/Carrosel'
 import Destaque from '../components/destaques'
 
