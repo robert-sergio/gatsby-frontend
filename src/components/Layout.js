@@ -13,7 +13,7 @@ export default function layout({ children, props }) {
     <section className='mb-5'>
         <MeuNavbar />
           <Container>
-          <Container className='mt-2 border rounded border-warning '>
+          <Container className='mt-2'>
               { children }
           </Container>
         </Container>

@@ -8,17 +8,17 @@ import Destaque from '../components/destaques'
 const HomePage = ({data}) => {
   return (
     <Layout >
-      <div style={{width: "100%", overflow: "hidden", margin:'auto', border:'3px solid green', textAlign:'center'}}>
+      <div style={{width: "100%", overflow: "hidden", margin:'auto', textAlign:'center'}}>
           <Carrossel />
       </div>
       <hr></hr>
-      <div style={{width: "100%", overflow: "hidden", margin:'auto', border:'3px solid green', textAlign:'center'}}>
+      <div style={{width: "100%", overflow: "hidden", margin:'auto', textAlign:'center'}}>
           <Destaque />
       </div>
 
       <hr></hr>
       
-      <div style={{width: "100%", margin:'auto', border:'3px solid green', textAlign:'center'}}>
+      <div style={{width: "100%", margin:'auto', textAlign:'center'}}>
         <h2>Projetos</h2>
 
         <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
@@ -27,7 +27,7 @@ const HomePage = ({data}) => {
               frontmatter.branch==='sobre'
               ? <p></p>
               : (
-                <Card className='mx-2' style={{width:'16rem', minWidth:'16rem', minHeight:'25rem', float: "center"}}>
+                <Card className='mx-2' style={{width:'16rem', minWidth:'16rem', minHeight:'25rem', float: "left"}}>
                   <a href={frontmatter.slug} style={{textDecoration:'None', color:'black'}}>
                   <CardHeader className='fw-bold'>
                     {frontmatter.header}
