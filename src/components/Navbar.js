@@ -14,51 +14,29 @@ import '../styles/styles.css'
 
 export default function MeuNavbar({ direction, ...args }) {
   return (
-    <div className='shadow mb-2'>
-        <div className='bg-black'>
-            <Navbar color="faded" light className='px-5'>
-                <NavbarBrand className='' href="/">
-                    <p className="text-warning fs-3 myfont">Robert Sergio</p>
-                </NavbarBrand>
-                <Nav className=''>
-                    <NavItem className='btn btn-light mx-1'>
-                        <a href='https://github.com/robert-sergio' class="bi nav-btn bi-github"></a>
-                    </NavItem>
-                    <NavItem className='btn btn-primary mx-1'>
-                        <a href='https://www.linkedin.com/in/robert-sergio/' class="bi nav-btn bi-linkedin"></a>
-                    </NavItem>
-                    <NavItem className='btn btn-danger  mx-1'>
-                        <a href='https://www.youtube.com/channel/UCtyEBMIbJheltY10Qyqf4DQ' class="bi nav-btn bi-youtube"></a>
-                    </NavItem>
-                </Nav>
-            </Navbar>
+    <div className='shadow'>
+        <div className='bg-black' style={{ display:'flex', justifyContent:'space-around', padding:'1rem'}}>
+            <div style={{float:'left'}}>
+                <p className="text-warning fs-3 myfont">Robert Sergio</p>
+            </div>
+            <div style={{float:'right'}}>
+                <div className='btn btn-light mx-1'>
+                    <a href='https://github.com/robert-sergio' class="bi nav-btn bi-github"></a>
+                </div>
+                <div className='btn btn-primary mx-1'>
+                    <a href='https://www.linkedin.com/in/robert-sergio/' class="bi nav-btn bi-linkedin"></a>
+                </div>
+                <div className='btn btn-danger  mx-1'>
+                    <a href='https://www.youtube.com/channel/UCtyEBMIbJheltY10Qyqf4DQ' class="bi nav-btn bi-youtube"></a>
+                </div>
+            </div>
         </div>
-        <div className='bg-secondary'>
-            <Navbar>
-                <Nav className='justify-content-center' style={{ flex: 1}}>
-                    {/* Tocar por GraphQL */}
-                    <NavItem>
-                        <NavLink className='text-warning' href="/">Home</NavLink>
-                    </NavItem>
-                    {/* <NavItem>
-                        <NavLink className='text-warning' href="/aulas/">Aprenda</NavLink>
-                    </NavItem> */}
-                    <NavItem>
-                        <NavLink className='text-warning' href="/projetos/">Meus projetos</NavLink>
-                    </NavItem>
-                    {/* <NavItem>
-                        <NavLink className='text-warning' href="/nerd/">Mundo Nerd</NavLink>
-                    </NavItem> */}
-                    <NavItem>
-                        <NavLink className='text-warning' href="/about/">Sobre</NavLink>
-                    </NavItem>
-                    {/* <NavItem>
-                        <NavLink className='text-warning' href="/contato/">Contato</NavLink>
-                    </NavItem> */}
-                </Nav>
-            </Navbar>
+        <div className='bg-secondary' style={{padding:'0.2rem', display:'flex', justifyContent:'center'}}>
+            {/* Tocar por GraphQL */}
+            <a className='text-warning' style={{margin:'1rem', textDecoration:'None'}} href="/">Home</a>
+            <a className='text-warning' style={{margin:'1rem', textDecoration:'None'}} href="/projetos/">Meus projetos</a>
+            <a className='text-warning' style={{margin:'1rem', textDecoration:'None'}} href="/about/">Sobre</a>
         </div>
-
     </div>
   );
 }

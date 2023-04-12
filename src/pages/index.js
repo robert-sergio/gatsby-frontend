@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { Card, CardBody, CardHeader, CardText, CardTitle, CardImg, Row} from 'reactstrap'
+import { Card, CardBody, CardHeader, CardText, CardTitle, Row, Col} from 'reactstrap'
 import Carrossel from '../components/Carrosel'
 import Destaque from '../components/destaques'
 
@@ -20,29 +20,33 @@ const HomePage = ({data}) => {
       
       <div style={{width: "100%", margin:'auto', textAlign:'center'}}>
         <h2>Projetos</h2>
+        <h6>Adicionar um filtro aqui.</h6>
 
         <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
-          <div style={{overflow: "hidden",}}>
+          <div style={{}}>
             { data.allMarkdownRemark.nodes.map (({ frontmatter }) => (
               frontmatter.branch==='sobre'
               ? <p></p>
               : (
-                <Card className='mx-2' style={{width:'16rem', minWidth:'16rem', minHeight:'25rem', float: "left"}}>
+                <Card className='mx-2' style={{ width:'100%'}}>
                   <a href={frontmatter.slug} style={{textDecoration:'None', color:'black'}}>
                   <CardHeader className='fw-bold'>
                     {frontmatter.header}
                   </CardHeader>
                   <CardBody >
-                      <CardImg src={frontmatter.url} style={{height:'10rem'}}/>
-                    <CardTitle className='fw-bold mb-2'>
-                      {frontmatter.title}
-                    </CardTitle >
-                    {/* <CardSubtitle className='fw-bold'>
-                      {frontmatter.subtitle}
-                    </CardSubtitle> */}
-                    <CardText>
-                      {frontmatter.text}
-                    </CardText>
+                    <Row>
+                      <Col>
+                        <img src={frontmatter.url} style={{width:'100%'}}/>
+                      </Col>
+                      <Col>
+                        <CardTitle className='fw-bold mb-2'>
+                          {frontmatter.title}
+                        </CardTitle >
+                        <CardText>
+                          {frontmatter.text}
+                        </CardText>
+                      </Col>
+                    </Row>
                   </CardBody>
                     </a>
                 </Card>
