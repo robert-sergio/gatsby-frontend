@@ -11,6 +11,8 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     {
       resolve: `gatsby-source-filesystem`,
       options: {

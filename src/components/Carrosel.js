@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import {
   Carousel,
   CarouselItem,
@@ -9,13 +10,13 @@ import {
 
 const items = [
   {
-    src: 'https://picsum.photos/id/123/1200/400',
-    altText: 'Slide 1',
-    caption: 'Slide 1',
+    src: '/slide-1.png',
+    altText: '',
+    caption: '',
     key: 1,
   },
   {
-    src: 'https://picsum.photos/id/456/1200/400',
+    src: '/icon.jpeg',
     altText: 'Slide 2',
     caption: 'Slide 2',
     key: 2,

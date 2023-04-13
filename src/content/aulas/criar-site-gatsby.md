@@ -7,6 +7,7 @@ header: "Programação"
 title: "Crie seu site usando Gatsby"
 url: 'https://images.ctfassets.net/23aumh6u8s0i/1vxNyK4RaOzRrc5ELJ8rqo/ec2a9b9dab9fb851db2794d80fe0f92d/gatsbyjs'
 text: 'Faça seu próprio site do zero e aprenda React, Github Actions, AWS S3 e como comprar seu proprio dominio.'
+stack: ''
 ---
 
 # Conteudo Novo!

@@ -9,20 +9,20 @@ const HomePage = ({data}) => {
   return (
     <Layout >
       <div style={{width: "100%", overflow: "hidden", margin:'auto', textAlign:'center'}}>
-          <Carrossel />
+          {/* <Carrossel /> */}
+          <img src='/slide-2.png' style={{width:'70%'}}></img>
       </div>
-      <hr></hr>
-      <div style={{width: "100%", overflow: "hidden", margin:'auto', textAlign:'center'}}>
+      {/* <div style={{width: "100%", overflow: "hidden", margin:'auto', textAlign:'center'}}>
           <Destaque />
-      </div>
+      </div> */}
 
       <hr></hr>
       
       <div style={{width: "100%", margin:'auto', textAlign:'center'}}>
-        <h2>Projetos</h2>
+        <h2>Ultimas publicações</h2>
 
         <div style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
-          <div style={{}}>
+          <div >
             { data.allMarkdownRemark.nodes.map (({ frontmatter }) => (
               frontmatter.branch==='sobre'
               ? <p></p>
@@ -39,12 +39,13 @@ const HomePage = ({data}) => {
                       </div>
 
                       <div style={{flex:'1', minWidth:'16rem', maxWidth:'40%'}}>
-                        <h4 className='fw-bold mb-2'>
+                        <h4 className='fw-bold mb-5'>
                           {frontmatter.title}
                         </h4 >
                         <p>
                           {frontmatter.text}
                         </p>
+                        <p >{frontmatter.date}</p>
                       </div>
                     </div>
                   </CardBody>

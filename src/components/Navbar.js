@@ -1,15 +1,6 @@
 import React from 'react';
-import {
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Row,
-  Col,
-  Container
-} from 'reactstrap';
 import '../styles/styles.css'
+import { Link } from 'gatsby';
 
 
 export default function MeuNavbar({ direction, ...args }) {
@@ -21,21 +12,24 @@ export default function MeuNavbar({ direction, ...args }) {
             </div>
             <div style={{float:'right'}}>
                 <div className='btn btn-light mx-1'>
-                    <a href='https://github.com/robert-sergio' class="bi nav-btn bi-github"></a>
+                    <a href='https://github.com/robert-sergio' className="bi nav-btn bi-github"></a>
                 </div>
                 <div className='btn btn-primary mx-1'>
-                    <a href='https://www.linkedin.com/in/robert-sergio/' class="bi nav-btn bi-linkedin"></a>
+                    <a href='https://www.linkedin.com/in/robert-sergio/' className="bi nav-btn bi-linkedin"></a>
                 </div>
                 <div className='btn btn-danger  mx-1'>
-                    <a href='https://www.youtube.com/channel/UCtyEBMIbJheltY10Qyqf4DQ' class="bi nav-btn bi-youtube"></a>
+                    <a href='https://www.youtube.com/channel/UCtyEBMIbJheltY10Qyqf4DQ' className="bi nav-btn bi-youtube"></a>
                 </div>
             </div>
         </div>
         <div className='bg-secondary' style={{padding:'0.2rem', display:'flex', justifyContent:'center'}}>
             {/* Tocar por GraphQL */}
-            <a className='text-warning' style={{margin:'1rem', textDecoration:'None'}} href="/">Home</a>
-            <a className='text-warning' style={{margin:'1rem', textDecoration:'None'}} href="/projetos/">Meus projetos</a>
-            <a className='text-warning' style={{margin:'1rem', textDecoration:'None'}} href="/about/">Sobre</a>
+            <Link style={{margin:'1rem', textDecoration:'None'}} to='/'>
+                <p className='text-warning'>Home</p>
+            </Link>
+            <Link style={{margin:'1rem', textDecoration:'None'}} to='/projetos'>
+                <p className='text-warning'>Projetos</p>
+            </Link>
         </div>
     </div>
   );
