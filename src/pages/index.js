@@ -8,15 +8,16 @@ import Destaque from '../components/destaques'
 const HomePage = ({data}) => {
   return (
     <Layout >
-      <div style={{width: "100%", overflow: "hidden", margin:'auto', textAlign:'center'}}>
+      {/* <div style={{display:'flex', alignItems:'center', justifyContent:'space-around'}}> */}
           {/* <Carrossel /> */}
-          <img src='/slide-2.png' style={{width:'70%'}}></img>
-      </div>
+          {/* <img src='/slide-square.png' style={{width:'30%'}}></img> */}
+          {/* <p>Texto</p> */}
+      {/* </div> */}
       {/* <div style={{width: "100%", overflow: "hidden", margin:'auto', textAlign:'center'}}>
           <Destaque />
       </div> */}
 
-      <hr></hr>
+      {/* <hr></hr> */}
       
       <div style={{width: "100%", margin:'auto', textAlign:'center'}}>
         <h2>Ultimas publicações</h2>
